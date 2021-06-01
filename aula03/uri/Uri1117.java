@@ -22,5 +22,7 @@ public class Uri1117 {
         }
         media = soma/2;
         System.out.printf("media = %.2f\n", media);
+
+        entrada.close();
     }
 }

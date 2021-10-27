@@ -1,4 +1,4 @@
-package exercicios.exercicio03;
+package exercicios.exercicio03.modelo;
 
 public abstract class Conta {
     private int numero;
@@ -11,6 +11,10 @@ public abstract class Conta {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public int getNumero(){
+        return numero;
     }
 
     @Override

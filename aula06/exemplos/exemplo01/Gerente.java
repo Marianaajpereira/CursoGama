@@ -5,7 +5,7 @@ public class Gerente extends Funcionario{
     
     public Gerente(String nome, double salario, int nFuncionarios) {
 
-        super(nome,salario); // chamada ao construtor da superclasse Funcionarios
+        super(nome,salario); // chamada ao construtor da superclasse Funcionario
         this.nFuncionarios=nFuncionarios;
 
     }

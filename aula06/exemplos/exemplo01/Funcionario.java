@@ -4,12 +4,13 @@ public class Funcionario {
     private String nome;
     private double salario;
 
+    //Overload - polimorfismo
     public Funcionario(String nome){
         this.nome=nome;
         this.salario=0;
     }
 
-    public Funcionario(String nome,double salario) {
+    public Funcionario(String nome,double salario) { // construtor
         this.nome=nome;
         this.salario=salario;
     }

@@ -17,7 +17,7 @@ public class Exemplo02 {
 
        lista.remove(2); // remove o valor do indice 2
 
-       for (Integer valor : lista) { // para cada 'valor' da lista faça
+       for (Integer valor : lista) { // atalho: foreach - para cada 'valor' da lista faça
         System.out.println(valor);
        }
    } 

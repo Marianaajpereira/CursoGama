@@ -2,10 +2,6 @@ package exercicios.exercicio03;
 
 import java.util.Scanner;
 
-import exercicios.exercicio03.modelo.Conta;
-import exercicios.exercicio03.modelo.ContaCorrente;
-import exercicios.exercicio03.modelo.ContaEspecial;
-import exercicios.exercicio03.modelo.ContaPoupanca;
 import exercicios.exercicio03.util.GerenciaConta;
 
 public class AppConta {
@@ -86,13 +82,13 @@ public class AppConta {
                     break;
                 case 8:
                     break;
-                default:
+                default: // caso contrario
                     System.out.println("Opcao invalida");    
             }
-            System.out.println("ENTER para confirmar.");
+            System.out.println("ENTER para confirmar...");
             entrada.nextLine();
             entrada.nextLine();
-        } while (menu != 7);
+        } while (menu != 8);
 
         entrada.close();
 

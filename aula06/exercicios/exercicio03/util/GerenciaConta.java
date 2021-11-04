@@ -15,7 +15,7 @@ public class GerenciaConta {
     }
 
     public void novaContaCorr(int numeroConta) {
-    /*  ContaCorrente cc = null;
+    /*  ContaCorrente cc;
         cc = new ContaCorrente(numeroConta);
         conta.add(cc); */
         contas.add(new ContaCorrente(numeroConta));
@@ -54,6 +54,15 @@ public class GerenciaConta {
             }
         }
         return "Conta nao encontrada";
+    }
+
+    public Conta getConta(int numeroConta) {
+        for (Conta conta : contas) {
+            if (conta.getNumero() == numeroConta) {
+                return new Conta(conta.getNumero(), conta.getSaldo());
+            }
+        }
+        return null;
     }
 
     public boolean remover(int numeroConta){

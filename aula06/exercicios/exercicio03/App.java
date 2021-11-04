@@ -8,6 +8,8 @@ import exercicios.exercicio03.modelo.ContaCorrente;
 import exercicios.exercicio03.modelo.ContaEspecial;
 import exercicios.exercicio03.modelo.ContaPoupanca;
 
+// App sem a classe GerenciaConta
+
 public class App {
 
     public static void main(String[] args) {

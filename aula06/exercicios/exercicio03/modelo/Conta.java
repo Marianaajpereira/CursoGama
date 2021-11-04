@@ -1,12 +1,17 @@
 package exercicios.exercicio03.modelo;
 
-public abstract class Conta {
+public class Conta {
     private int numero;
     private double saldo;
 
     public Conta(int numero) {
         this.numero = numero;
         this.saldo = 0;
+    }
+
+    public Conta(int numero, double saldo) {
+        this.numero = numero;
+        this.saldo = saldo;
     }
 
     public double getSaldo() {

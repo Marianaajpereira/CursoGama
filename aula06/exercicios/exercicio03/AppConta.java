@@ -1,8 +1,10 @@
 package exercicios.exercicio03;
-
 import java.util.Scanner;
 
+import exercicios.exercicio03.modelo.Conta;
 import exercicios.exercicio03.util.GerenciaConta;
+
+// App com a classe GerenciaConta
 
 public class AppConta {
 
@@ -69,7 +71,12 @@ public class AppConta {
                 case 6:
                     System.out.println("Informe o numero da conta: ");
                     numeroConta = entrada.nextInt();
-                    System.out.println(contas.getSaldo(numeroConta));
+                    Conta conta = contas.getConta(numeroConta);
+                    if(conta !=  null){
+                        System.out.println(conta);
+                    } else {
+                        System.out.println("Conta não encontrada");
+                    }
                     break;
                 case 7:
                     System.out.println("Informe o numero da conta: ");
